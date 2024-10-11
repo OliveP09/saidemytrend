@@ -1,5 +1,5 @@
 // Define the URL of the Artifactory registry
-def registry = 'https://saidemy5555.jfrog.io'
+def registry = 'https://olivedevops.jfrog.io/'
 
 pipeline {                                    // 1  // Defines the start of the Jenkins pipeline block
 
@@ -78,7 +78,7 @@ pipeline {                                    // 1  // Defines the start of the 
                           "files": [
                             {
                               "pattern": "jarstaging/(*)",
-                              "target": "sai-libs-release-local/{1}",
+                              "target": "olivedevops-libs-release-local/{1}",
                               "flat": "false",
                               "props": "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
