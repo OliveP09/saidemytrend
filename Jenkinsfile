@@ -35,7 +35,7 @@ pipeline {                                    // 1  // Defines the start of the 
 
         stage('SonarQube analysis') {         // 8  // Creates a stage named 'SonarQube analysis'
             environment {                     // 9  // Defines environment variables specific to this stage
-                scannerHome = tool 'olive-sonar-scanner'  
+                scannerHome = tool 'olive-sonarqube-scanner'  
                                               // Sets the SonarQube scanner tool
             }                                 // 9  // Ends the environment block for this stage
 
